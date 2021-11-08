@@ -9,12 +9,18 @@ export const Navegacion = styled.nav`
     align-items: center;
     @media (max-width: 768px) {
         flex-direction: column;
+        padding-bottom: 4rem;
+    }
+    @media (max-width: 400px) {
+        padding-bottom: 10rem;
+        padding-top: 2rem;
     }
 `
 export const BarraIzquierda = styled.section`
     display: flex;
     gap: 5rem;
     @media (max-width: 768px) {
+        display: none;
         flex-direction: column;
     }
 `
@@ -28,6 +34,15 @@ export const Link = styled.a`
 `
 export const BtnDescargar = styled.button`
     padding: 2rem 4rem;
-    background-color: #9c692f;
+    background-color: #ff8906;
     color: #FFF;
+    font-size: 1.5rem;
+    margin-right: 10rem;
+    cursor: pointer;
+    @media (max-width: 768px){
+        margin: 0;
+    }
+    @media (max-width: 950px) {
+        margin: 0;
+    }
 `

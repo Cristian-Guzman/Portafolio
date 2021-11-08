@@ -4,17 +4,19 @@ export const ContenedorHero = styled.article`
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 2rem;
-    height: 45rem;
+    height: 35rem;
+    align-items: center;
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column-reverse;
+        padding-top: 20rem;
+        padding-bottom: 2rem;
     }
 `
 
 export const InformacionHero = styled.section`
     display: flex;
     flex-direction: column;
-    /* margin-left: 8rem; */
 `
 export const InformacionDev = styled.h1`
     font-size: 3.5rem;
@@ -28,14 +30,24 @@ export const InteresDev = styled.h3`
 
 export const ImagenHero = styled.section`
     width: 100%;
-    margin-left: 10rem;
+    text-align: center;
     @media (max-width: 768px) {
         margin: 0;
-        grid-row: 1;
     }
 `
 
 export const Imagen = styled.img`
     width: 32rem;
-    /* border-radius: 100%; */
+    margin-left: 8rem;
+    border-radius: 50%;
+    @media (max-width: 768px) {
+        margin: 0;
+        width: 27rem;
+    }
+`
+
+export const Svg = styled.svg`
+    width: 4rem;
+    color: #ff8906;
+    padding-bottom: 2rem;
 `

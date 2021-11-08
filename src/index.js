@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hero from './components/Hero.js';
 import Container from './container/Container.js';
-import styled, {createGlobalStyle} from 'styled-components';
-// import "../public/normalize.css";
+import theme from './styles/variables.js';
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   html {
     font-size: 62.5%;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Krub', sans-serif;
   }
 `
 
 ReactDOM.render(
   <React.StrictMode>
+    <ThemeProvider theme={theme}>
     <GlobalStyles />
     <Container />
-    <Hero />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

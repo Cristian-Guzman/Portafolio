@@ -1,27 +1,27 @@
 import React from 'react'
 import {Navegacion, BarraIzquierda, BarraDerecha, Link, BtnDescargar} from '../styles/header.style.js';
-import {BackBlack, Contenedor} from '../styles/utilidades.style.js'
+import {BackgroundColor, Contenedor} from '../styles/utilidades.style.js'
 
 const Header = () => {
     return (
-        <>
-        <BackBlack> 
+        <React.Fragment>
+            <BackgroundColor backgroundColor="#0f0e17">
             <Contenedor> 
                 <Navegacion>
                     <BarraIzquierda>
-                        <Link>Logo</Link>
-                        <Link>Hola</Link>
-                        <Link>Proyectos</Link>
-                        <Link>Testimonios</Link>
-                        <Link>Contacto</Link>
+                        <Link href="#">Cristian Guzman</Link>
+                        <Link>Hi</Link>
+                        <Link>Projects</Link>
+                        <Link>Testimoniums</Link>
+                        <Link>Contact</Link>
                     </BarraIzquierda>
                     <BarraDerecha>
-                        <BtnDescargar>Descargar curriculum</BtnDescargar>
+                        <BtnDescargar>Download CV</BtnDescargar>
                     </BarraDerecha>
                 </Navegacion>
             </Contenedor>
-        </BackBlack>
-        </>
+        </BackgroundColor>
+        </React.Fragment>
     )
 }
 

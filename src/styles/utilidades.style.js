@@ -11,16 +11,19 @@ export const Titulo = styled.h2`
     font-weight: ${props => props.fontWeight};
     color: ${props => props.color};
     padding: ${props => props.padding};
+    margin: ${props => props.margin};
 `
 
 export const SubTitulo = styled.h4`
     font-size: ${props => props.fontSize};
     font-weight: ${props => props.fontWeight};
     color: ${props => props.color};
+    text-align: ${props => props.textAlign};
 `
 
 export const BackgroundColor = styled.div`
     background-color: ${props => props.backgroundColor};
+    padding: ${props => props.padding};
 `
 
 export const Button = styled.button`

@@ -18,7 +18,7 @@ export const Project = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -9rem;
+    top: -15rem;
     left: 3rem;
 `
 

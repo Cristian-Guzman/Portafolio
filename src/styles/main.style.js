@@ -18,8 +18,14 @@ export const Project = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -15rem;
+    top: -9rem;
     left: 3rem;
+    @media (min-width: 600px) {
+        top: -15rem;
+    }
+    @media (min-width: 900px) {
+        top: -22rem;
+    }
 `
 
 export const ProjectImage = styled.img`

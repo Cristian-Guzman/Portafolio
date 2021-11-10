@@ -23,6 +23,12 @@ export const BarraIzquierda = styled.section`
         display: none;
         flex-direction: column;
     }
+    .on {
+        color: #f25f4c;
+    }
+    .off {
+        color: #fff;
+    }
 `
 export const BarraDerecha = styled.div`
 
@@ -30,7 +36,9 @@ export const BarraDerecha = styled.div`
 export const Link = styled.a`
     text-decoration: none;
     font-size: 2rem;
-    color: #FFF;
+    color: ${props => props.color ||'#fff'};
+    font-weight: ${props => props.fontWeight};
+    cursor: pointer;
 `
 export const BtnDescargar = styled.button`
     padding: 2rem 4rem;
@@ -39,6 +47,11 @@ export const BtnDescargar = styled.button`
     font-size: 1.5rem;
     margin-right: 10rem;
     cursor: pointer;
+    border: none;
+    transition: all .4s linear;
+    &:hover {
+        background-color: #ff8b06c0;
+    }
     @media (max-width: 768px){
         margin: 0;
     }

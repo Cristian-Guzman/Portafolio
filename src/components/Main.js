@@ -9,7 +9,7 @@ function Main() {
     return (
         <React.Fragment>
             <BackgroundColor backgroundColor="#fff">
-            <Contenedor>
+            <Contenedor id="main">
                 <MotMain>It looks like magic, but it works with code.</MotMain>
                 <MotTwo>On my road to being a Frontend Developer, i have the privilege to work in projects that helped me to become the profesional that i am now.</MotTwo>
                     <Projects>

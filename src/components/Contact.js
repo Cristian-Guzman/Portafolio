@@ -6,7 +6,7 @@ function Contact() {
     return (
         <React.Fragment>
             <BackgroundColor backgroundColor="#f6907b" padding="4rem 0">
-                <Form action="https://formspree.io/f/xjvjqdlr" method="POST" backgroundColor="#0f0e17">
+                <Form id="contact" action="https://formspree.io/f/xjvjqdlr" method="POST" backgroundColor="#0f0e17">
                     <FormContenedor>
                     <Titulo fontSize="2rem" color="#fff" margin="1rem 0 0 0">Contact</Titulo>
                     <SubTitulo fontSize="1.4rem" color="#a7a9be">If you´re interested in work with me in your next project, don't hesitate to reach out to me..</SubTitulo>

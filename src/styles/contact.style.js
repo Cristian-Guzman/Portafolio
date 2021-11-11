@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const Form = styled.form`
     background-color: ${props => props.backgroundColor};
     position: relative;
-    left: 2rem;
+    left: 8%;
     width: 80vw;
+    @media (min-width: 900px) {
+        left: 30%;
+        width: 40vw;
+    }
 `;
 
 export const FormContenedor = styled.div`

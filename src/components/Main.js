@@ -2,7 +2,7 @@ import React from 'react'
 import { MotMain, MotTwo, Project, Projects, ProductParagrahp, ProductName, ProjectImage} from '../styles/main.style'
 import { BackgroundColor, Contenedor, Button, ArrowRight } from '../styles/utilidades.style'
 
-function Main() {
+export function Main() {
     function openCode(link){
         window.location.href = link;
     }

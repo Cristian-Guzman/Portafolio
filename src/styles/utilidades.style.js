@@ -12,6 +12,7 @@ export const Titulo = styled.h2`
     color: ${props => props.color};
     padding: ${props => props.padding};
     margin: ${props => props.margin};
+    text-align: ${props => props.align};
 `
 
 export const SubTitulo = styled.h4`
@@ -46,4 +47,12 @@ export const ArrowRight = styled.svg`
     position: ${props => props.position};
     left: ${props => props.left};
     bottom: ${props => props.bottom};
+    cursor: ${props => props.cursor};
+    transition: all .4s linear;
+    @media (min-width: 786px){
+        width: ${props => props.hoverWidth};
+    }
+    &:hover {
+        color: #fed9dab9;
+    }
 `

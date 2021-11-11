@@ -25,6 +25,7 @@ export const BarraIzquierda = styled.section`
     }
     .on {
         color: #f25f4c;
+        border-bottom: 1px solid #f25f4c;
     }
     .off {
         color: #fff;
@@ -34,11 +35,12 @@ export const BarraDerecha = styled.div`
 
 `
 export const Link = styled.a`
+    
     text-decoration: none;
     font-size: 2rem;
     color: ${props => props.color ||'#fff'};
     font-weight: ${props => props.fontWeight};
-    cursor: pointer;
+    cursor: ${props => props.cursor || 'pointer'};
 `
 export const BtnDescargar = styled.button`
     padding: 2rem 4rem;

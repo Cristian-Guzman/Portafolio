@@ -31,6 +31,9 @@ export const Project = styled.div`
 export const ProjectImage = styled.img`
     z-index: -1;
     width: 92vw;
+    @media (min-width: 900px) {
+        width: 80vw;
+    }
 `
 
 export const Projects = styled.article`

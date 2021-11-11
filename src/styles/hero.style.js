@@ -50,4 +50,5 @@ export const Svg = styled.svg`
     width: 4rem;
     color: #ff8906;
     padding-bottom: 2rem;
+    cursor: ${props => props.cursor || 'context-menu'};
 `
